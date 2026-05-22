@@ -1,0 +1,18 @@
+#ifndef STRING_TASKS_H
+#define STRING_TASKS_H
+
+#include <string>
+
+// --- Завдання 1 (Варіант 45) ---
+// Власна функція порівняння, яка працює без стандартних бібліотек
+int custom_compare(const char* str, size_t pos, size_t len, const char* s);
+void run_task1(); // Функція-обгортка для запуску з меню
+
+// --- Завдання 2 (Варіант String23) ---
+bool is_valid_positive_integer(const std::string& str);
+int calculate_digit_sum(const std::string& str);
+void create_sample_file(const std::string& filename);
+void process_file(const std::string& input_filename, const std::string& output_filename);
+void run_task2(); // Функція-обгортка для запуску з меню
+
+#endif // STRING_TASKS_H
